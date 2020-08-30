@@ -16,6 +16,13 @@ buildscript {
 
 allprojects {
     repositories {
+        maven {
+            credentials {
+                username "trial"
+                password "trial_usage"
+            }
+            url "https://waspbean.jfrog.io/artifactory/lib-scanberry-local"
+        }
         google()
         jcenter()
     }

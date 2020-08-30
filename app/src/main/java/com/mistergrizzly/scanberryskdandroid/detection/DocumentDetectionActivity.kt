@@ -87,6 +87,7 @@ class DocumentDetectionActivity : AppCompatActivity() {
         surfaceHolder = scanberryCameraPreview.getSurfaceHolder()
         surfaceHolder?.addCallback(surfaceHolderCallback)
         surfaceHolder?.setType(SurfaceHolder.SURFACE_TYPE_PUSH_BUFFERS)
+        scanberryCameraPreview.showCameraPreview()
     }
 
     private val surfaceHolderCallback = object : SurfaceHolder.Callback {
